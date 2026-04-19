@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EA24B0E52F87A96300294C2D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = EA24B0E42F87A96300294C2D /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EA24B0D32F818D1300294C2D /* Lectito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lectito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA24B0E52F87A96300294C2D /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Lectito;
 			packageProductDependencies = (
+				EA24B0E42F87A96300294C2D /* Supabase */,
 			);
 			productName = Lectito;
 			productReference = EA24B0D32F818D1300294C2D /* Lectito.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = EA24B0CA2F818D1200294C2D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EA24B0E32F87A96300294C2D /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA24B0D42F818D1300294C2D /* Products */;
 			projectDirPath = "";
@@ -332,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA24B0E32F87A96300294C2D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA24B0E42F87A96300294C2D /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA24B0E32F87A96300294C2D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA24B0CB2F818D1200294C2D /* Project object */;
 }
